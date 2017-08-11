@@ -6,7 +6,7 @@ public class Ex02 {
 
 	public static void main(String[] args) {
 		Random random = new Random();
-		int y = 366; // 0 ~ 365
+		int y = 360; // 0 ~ 359
 
 		int n = random.nextInt();
 		System.out.println("n = " + n);

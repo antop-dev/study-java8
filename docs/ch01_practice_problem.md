@@ -27,11 +27,11 @@ System.out.println("inverse = " + inverse);
 System.out.println("hex = " + hex);
 ```
 
-#### 2. 정수(양의 정수 또는 음의 정수)로 된 각도를 읽고 0~365도 사이의 값으로 정규화하는 프로그램을 작성하라. 먼저 % 연산자를 이용해 만들어본 다음. floorMod 메서드를 이용해 만들어본다.
+#### 2. 정수(양의 정수 또는 음의 정수)로 된 각도를 읽고 0~360도 사이의 값으로 정규화하는 프로그램을 작성하라. 먼저 % 연산자를 이용해 만들어본 다음. floorMod 메서드를 이용해 만들어본다.
 
 ```java
 Random random = new Random();
-int y = 366; // 0 ~ 365
+int y = 360; // 0 ~ 359
 
 int n = random.nextInt();
 System.out.println("n = " + n);

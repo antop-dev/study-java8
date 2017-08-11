@@ -19,7 +19,7 @@ public class Ex14 {
 				if ("".equals(line)) { // 아무것도 입력하지 않으면 끝
 					break;
 				}
-				inputs.add(line);
+				inputs.add(line.trim());
 			}
 		}
 
@@ -82,7 +82,7 @@ public class Ex14 {
 		{
 			int sum = 0;
 			for (int i = size - 1; i >= 0; i--) {
-				sum += square[i][i];
+				sum += square[i][size - 1 - i];
 			}
 			sums.add(sum);
 

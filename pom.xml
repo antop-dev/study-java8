@@ -6,7 +6,16 @@
 	<version>0.0.1</version>
 	<name>java8 study</name>
 	<description>카이 호스트만의 코어 자바8 스터디</description>
-	
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>4.0</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>

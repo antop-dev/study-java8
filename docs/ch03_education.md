@@ -495,9 +495,15 @@ public static void repeatMessage(String text, int count) {
 
 ### 3.8.1 함수를 반환하는 메서드
 
+p154
+
 ### 3.8.2 함수를 수정하는 메서드
 
+p155
+
 ### 3.8.3 Comparator 인터페이스의 메서드
+
+p156
 
 ## 3.9 지역 내부 클래스
 

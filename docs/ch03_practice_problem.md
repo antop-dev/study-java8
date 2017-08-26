@@ -1,4 +1,4 @@
-##### 1. 객체를 어떤 방법으로 측정하는 double getMeasure() 메서드를 갖는 Measurable 인터페이스를 만든다. 그런 다음 Employee가 Measurable을 구현하게 한다. 마지막으로 평균 측정치를 계산하는 double average(Measurable[] objects) 메서드를 만들어서 직원 배열의 평균 급여를 계산하는 데 사용하라.
+#### 1. 객체를 어떤 방법으로 측정하는 double getMeasure() 메서드를 갖는 Measurable 인터페이스를 만든다. 그런 다음 Employee가 Measurable을 구현하게 한다. 마지막으로 평균 측정치를 계산하는 double average(Measurable[] objects) 메서드를 만들어서 직원 배열의 평균 급여를 계산하는 데 사용하라.
 
 ```java
 package ch03.ex01;
@@ -16,7 +16,7 @@ public interface Measurable {
     }
 
     /**
-     * 객체를 어던 방법으로 측정
+     * 객체를 어떤 방법으로 측정
      *
      * @return
      */
@@ -40,7 +40,7 @@ public class Employee implements Measurable {
 }
 ```
 
-##### 2. 연습문제 1번에 이어스 Measurable largest(Measurable[] objects) 메서드를 만든다. 이 메서드를 사용해서 급여가 가장 높은 직원의 이름을 구하라. 이 때 타입 변환이 필요한 이유는 무엇인가?
+#### 2. 연습문제 1번에 이어스 Measurable largest(Measurable[] objects) 메서드를 만든다. 이 메서드를 사용해서 급여가 가장 높은 직원의 이름을 구하라. 이 때 타입 변환이 필요한 이유는 무엇인가?
 
 직원(Employee)의 급여(salary)는 Measurable 엔터페이스에서 제공하지 않는다. 급여를 가져 오기 위해서 Employee 클래스로 변환해야 한다.
 
@@ -98,7 +98,7 @@ public interface Measurable {
 }
 ```
 
-##### 3. String, Scanner, ImageOutputStream의 슈퍼타입들을 모두 나열하라. 각 타입은 그 자신의 수퍼타입이라는 점을 유의한다. 슈퍼타입을 선언하지 않는 클래스 또는 인터페이스는 Object를 슈퍼타입으로 둔다.
+#### 3. String, Scanner, ImageOutputStream의 슈퍼타입들을 모두 나열하라. 각 타입은 그 자신의 수퍼타입이라는 점을 유의한다. 슈퍼타입을 선언하지 않는 클래스 또는 인터페이스는 Object를 슈퍼타입으로 둔다.
 
 * java.lang.String
 
@@ -113,7 +113,7 @@ public interface Measurable {
 ![javax.imageio.stream.ImageOutputStream](ch03/ex03-03.png)
 
 
-##### 4. 인자들로 구성된 시퀀스를 돌려주는 IntSequence 클래스의 정적 메서드 of를 구현하라. 예를 들어 IntSequence.of(3, 1, 4, 1, 5, 9)는 값 여섯 개로 구성된 시퀀스를 돌려준다.
+#### 4. 인자들로 구성된 시퀀스를 돌려주는 IntSequence 클래스의 정적 메서드 of를 구현하라. 예를 들어 IntSequence.of(3, 1, 4, 1, 5, 9)는 값 여섯 개로 구성된 시퀀스를 돌려준다.
 
 ```java
 package ch03.ex04;
@@ -141,7 +141,7 @@ public interface IntSequence {
 }
 ```
 
-##### 5. 무한 상수 시퀀스를 돌려주는 IntSequence 클래스의 정적 메서드 constant를 구현하라. 예를 들어 IntSequence.constant(1)은 값 1 1 1...을 도려준다.
+#### 5. 무한 상수 시퀀스를 돌려주는 IntSequence 클래스의 정적 메서드 constant를 구현하라. 예를 들어 IntSequence.constant(1)은 값 1 1 1...을 도려준다.
 
 ```java
 package ch03.ex05;
@@ -167,7 +167,7 @@ public interface IntSequence {
 }
 ```
 
-##### 6. 직접해보지는 않고 추측만 해봄.... -_-v
+#### 6. 직접해보지는 않고 추측만 해봄.... -_-v
 
 forEachRemaining 메서드가 기본 메서드(default)로 작성되어 있기 때문에 정상적으로 작동된다.
 
@@ -319,7 +319,7 @@ public interface Iterator<E> {
 }
 ```
 
-##### 7. 비교자로 판단할 경우 요소들이 오름차순으로 정렬될 때가지 배열 리스트에 Collections.shuffle을 계속 호출하는 void luckySort(ArrayList&lt;String&gt; strings, Comparator&lt;String&gt; comp) 메서드를 구현하라.
+#### 7. 비교자로 판단할 경우 요소들이 오름차순으로 정렬될 때가지 배열 리스트에 Collections.shuffle을 계속 호출하는 void luckySort(ArrayList&lt;String&gt; strings, Comparator&lt;String&gt; comp) 메서드를 구현하라.
 
 ```java
 package ch03.ex07;
@@ -358,7 +358,7 @@ public class Sorter {
 }
 ```
 
-##### 8. Runnable을 구현하는 Greeter 클래스를 구현하라. 이 클래스의 run 메서드는 "Hello, " + target을 n번 출력해야 한다. 여기서 n과 target은 생성자에서 설정한다. 각기 다른 메시지로 인스턴스 두 개를 생성해서 두 스레드에서 동시에 실행하라.
+#### 8. Runnable을 구현하는 Greeter 클래스를 구현하라. 이 클래스의 run 메서드는 "Hello, " + target을 n번 출력해야 한다. 여기서 n과 target은 생성자에서 설정한다. 각기 다른 메시지로 인스턴스 두 개를 생성해서 두 스레드에서 동시에 실행하라.
 
 ```java
 package ch03.ex08;
@@ -383,7 +383,7 @@ public class Greeter implements Runnable {
 }
 ```
 
-##### 9. 다음 메서드를 구현하라
+#### 9. 다음 메서드를 구현하라
 
 public static void runTogether(Runnable... tasks)<br/>
 public static void runInOrder(Runnable... tasks)
@@ -412,7 +412,7 @@ public class Runner {
 }
 ```
 
-##### 10. java.io.File 클래스의 listFiles(FileFilter)와 isDirectory 메서드를 사용해서 주어진 디렉터리의 모든 서브 디렉터리를 반환하는 메서드를 작성하라. FileFilter 객체 대신 람다 표현식을 사용한다. 메서드 표현식과 익명 내부 클래스로 같은 작업을 반복하라.
+#### 10. java.io.File 클래스의 listFiles(FileFilter)와 isDirectory 메서드를 사용해서 주어진 디렉터리의 모든 서브 디렉터리를 반환하는 메서드를 작성하라. FileFilter 객체 대신 람다 표현식을 사용한다. 메서드 표현식과 익명 내부 클래스로 같은 작업을 반복하라.
 
 ```java
 package ch03.ex10;
@@ -445,7 +445,7 @@ public class FileFilterDemo {
 }
 ```
 
-##### 11. java.io.File 클래스의 list(FilenameFilter) 메서드를 사용해 지정된 디렉터리에서 지정된 확장자에 해당하는 모든 파일을 반환하는 메서드를 작성하라. FilenameFilter를 사용하지 말고 람다 표현식을 사용하라. 감싸고 있는 유효 범위에 속한 변수 중 어느 것을 캡처하는가? 
+#### 11. java.io.File 클래스의 list(FilenameFilter) 메서드를 사용해 지정된 디렉터리에서 지정된 확장자에 해당하는 모든 파일을 반환하는 메서드를 작성하라. FilenameFilter를 사용하지 말고 람다 표현식을 사용하라. 감싸고 있는 유효 범위에 속한 변수 중 어느 것을 캡처하는가? 
 
 캡처하는 변수는 찾아야할 확장자를 가지고 있는 변수(ext)이다.
 
@@ -504,7 +504,7 @@ public class FileSortDemo {
 }
 ```
 
-##### 13. Runnable 인스턴스의 배열을 받고, run 메서드에서 이 인스턴스들을 차례로 실행하는 Runnalbe을 반환하는 메서드를 작성하라. 람다 표현식을 반환하라.
+#### 13. Runnable 인스턴스의 배열을 받고, run 메서드에서 이 인스턴스들을 차례로 실행하는 Runnalbe을 반환하는 메서드를 작성하라. 람다 표현식을 반환하라.
 
 ```java
 package ch03.ex13;
@@ -521,7 +521,7 @@ public class RunnableDemo {
 }
 ```
 
-##### 14. 직원을 급여에 따라 정렬하는 Arrays.sort 호출을 작성하라. 순위가 같으면 이름으로 정렬한다. Comparator.thenComparing을 사용한다. 그런 다음 이작업을 역순으로 수행한다.
+#### 14. 직원을 급여에 따라 정렬하는 Arrays.sort 호출을 작성하라. 순위가 같으면 이름으로 정렬한다. Comparator.thenComparing을 사용한다. 그런 다음 이작업을 역순으로 수행한다.
 
 ```java
 package ch03.ex14;
@@ -555,7 +555,7 @@ public class EmployeeSort {
 }
 ```
 
-##### 15. 3.9.1 지역 클래스에서 나온 RandomSequence를 randomInsts 메서드 외부에 있는 중첩 클래스로 구현하라.
+#### 15. 3.9.1 지역 클래스에서 나온 RandomSequence를 randomInsts 메서드 외부에 있는 중첩 클래스로 구현하라.
 
 ```java
 package ch03.ex15;

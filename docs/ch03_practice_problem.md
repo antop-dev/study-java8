@@ -153,7 +153,7 @@ public interface IntSequence {
 
     public static IntSequence constant(int n) {
         return new IntSequence() {
-                @Override
+            @Override
             public boolean hasNext() {
                 return true;
             }
@@ -491,10 +491,15 @@ public class FileSortDemo {
         // input
         File[] files = fileList.toArray(new File[fileList.size()]);
 
-        Arrays.sort(employees,
-                Comparator.comparing(Employee::getSalary, (o1, o2) -> (int) (o2 - o1))
-                        .thenComparing(Employee::getName, (o1, o2) -> o1.compareToIgnoreCase(o2))
-        );
+        Arrays.sort(files, (o1, o2) -> {
+            if (o1.isDirectory() && o2.isFile()) {
+                return -1;
+            }
+            if (o1.isFile() && o2.isDirectory()) {
+                return 1;
+            }
+            return o1.compareTo(o2);
+        });
 
         for(File file : files) {
             System.out.println(file);

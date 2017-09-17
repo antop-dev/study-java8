@@ -1,0 +1,12 @@
+#1 Database for Cloud Scale Simplicity
+Oracle’s latest database cloud innovations help more businesses than ever leverage industry-leading enterprise capabilities while simplifying access for IT and developers. New data management capabilities enable companies of all sizes to confidently and easily migrate workloads to the cloud. Its massive cloud scalability and rapid analytics help deliver faster time to insights, greater agility, and real cost savings advantages.
+
+Whether you are developing applications or looking to migrate data management to the cloud, you now have instant access to enterprise-grade database capabilities. Oracle Database Cloud drives real business value with its ability to support a true hybrid cloud deployment strategy: 100 percent compatibility. Count on the same experience, whether on premises or in the cloud.
+
+Download Oracle Database 12c
+icon for Cloud First Cloud First
+
+Capture the value of the cloud without compromise
+
+Cloud First
+The latest innovations for Oracle Database are now available in the cloud first. With 100 percent compatibility engineered across both on-premises and cloud deployments, customers can quickly benefit from the latest cloud services. Developers have full access to all Oracle Database options for development and test, while IT can validate database migrations, load test, or performance test existing databases before production deployment. No matter which deployment option you choose, the instant availability of database cloud services further simplifies database access for both IT and developers.

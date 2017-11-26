@@ -532,7 +532,7 @@ IntStream과 LongStream에는 정적 메서드 range와 rangeClosed가 있는데
 
 ```java
 IntStream zeroToNinetyNine = IntStream.range(0, 100) // 상한값을 제외한다. 0 ~ 99
-IntStream zeroToHundred = IntStream.range(0, 100) // 상한값을 포함한다. 0 ~ 100
+IntStream zeroToHundred = IntStream.rangeClosed(0, 100) // 상한값을 포함한다. 0 ~ 100
 ```
 
 CharSequence 인터페이스에는 codePoints와 chars메서드가 있다. 이들은 각각 문자의 유니코드와 UTF-16 인코딩의 코드 유닛으로 구성된 IntStream을 돌려준다.

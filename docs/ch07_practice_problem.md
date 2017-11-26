@@ -1,4 +1,23 @@
-#### 1. n보다 작거나 같은(≤) 소수를 모두 알아내는 데 사용할 '에라스토테네스의 체(Sieve of Erathostenes)' 알고리즘을 구현하라.
+#### 1. n보다 작거나 같은(≤) 소수를 모두 알아내는 데 사용할 '[에라스토테네스의 체(Sieve of Erathostenes)](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)' 알고리즘을 구현하라.
+
+```java
+int numbers = 100;
+Set<Integer> set = new HashSet<>();
+for (int i = 2; i <= numbers; i++) {
+    set.add(i);
+}
+
+while (true) {
+    int n = Collections.min(set);
+    set.removeIf(integer -> integer % n == 0);
+    if (Math.pow(n, 2) > numbers) {
+        break;
+    }
+}
+
+// [13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+System.out.println(set);
+```
 
 #### 2. 문자열의 배열 리스트에 들어 있는 각 문자열을 대문자로 만들라. (a) 반복자, (b) 인덱스 값을 이용한 루프, (c) replaceAll 메서드를 이용해서 작성해야 한다.
 
@@ -369,4 +388,4 @@ public class Cache<K, V> extends LinkedHashMap<K, V> {
 
 #### 17. 검사 뷰가 힙 펄루션의 원인에 대한 정확한 오류 보고를 제공하는 원리를 설명하라.
 
-#### Collections 클래스는 정적 변수 EMPTY_LIST, EMPTY_MAP, EMPTY_SET을 포함한다. 이 변수들이 empryList, empryMap, emptySet 메서드만큼은 유용하지 못한 이유를 설명하라.
+#### 18. Collections 클래스는 정적 변수 EMPTY_LIST, EMPTY_MAP, EMPTY_SET을 포함한다. 이 변수들이 empryList, empryMap, emptySet 메서드만큼은 유용하지 못한 이유를 설명하라.

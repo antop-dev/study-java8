@@ -1,7 +1,5 @@
 package ch06.ex03;
 
-import ch06.sec01.Entry;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

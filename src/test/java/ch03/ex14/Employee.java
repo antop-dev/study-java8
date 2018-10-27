@@ -1,8 +1,5 @@
 package ch03.ex14;
 
-import ch03.sec02.Identified;
-import ch03.sec02.Person;
-
 public class Employee implements Person, Identified {
     private String name;
     private double salary;

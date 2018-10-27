@@ -1,7 +1,5 @@
 package ch06.ex12;
 
-import ch06.sec04.Lists;
-
 import java.util.Comparator;
 import java.util.List;
 
@@ -24,7 +22,7 @@ public class Arrays {
 		result.add(max);
 	}
 
-	public static <T> void maxmin(List<T> elements, Comparator<? super T>comp, List<? super T> result) {
+	public static <T> void maxmin(List<T> elements, Comparator<? super T> comp, List<? super T> result) {
 		minmax(elements, comp, result);
 		Lists.swap(result, 0, 1);
 	}
